@@ -1,4 +1,4 @@
-module.exports = async (client, fs) => {
+module.exports = async function(client, fs)  {
   fs.readdir(`./events`, (err, files) => {
     if (err) return console.error(err);
     files.forEach(file => {
