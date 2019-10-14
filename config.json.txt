@@ -1,4 +1,5 @@
 {
 "token":"TOKEN_GOES_HERE",
-"prefix":"<3"
+"prefix":"<3",
+"Dev":"YOUR_DISCORD_ID"
 }
