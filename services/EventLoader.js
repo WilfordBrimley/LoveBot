@@ -10,7 +10,7 @@ module.exports = async function(client, fs)  {
   });
 
   // Just some easy event stuff we don`t need separate files for
-  client.on(`messageCreate`, async (message) => console.log(message.content));
+  //client.on(`messageCreate`, async (message) => console.log(message.content));
   client.on(`rateLimit`, (rateLimit) => console.log(rateLimit));
   client.on(`error`, (error) => console.log(error));
   client.on(`guildCreate`, (guild) => console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`))

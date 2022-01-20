@@ -1,5 +1,21 @@
 exports.run = (client, message, params) => {
 
+if (!params) {
+  message.reply(`Please enter some parameters that make sense.`);
+  return;
+} else {
+
+ 
+
+
+
+}
+
+
+
+
+
+
 };
 
 exports.conf = {

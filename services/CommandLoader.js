@@ -14,5 +14,5 @@ module.exports = async (client, fs) => {
     });
     console.log((`Loaded a total of ${files.length} command(s).`));
   })
-  
+
 };

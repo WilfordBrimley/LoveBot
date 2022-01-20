@@ -23,7 +23,7 @@ client.tree = require('treeify');                  // Display Objects as pretty 
 /**───────────────────────────────────────────────────────────────── @LOAD_SERVICES ─*/
 require(`./services/EventLoader`)(client, fs);     // All events sent from discord
 require(`./services/CommandLoader`)(client, fs);   // Handle all commands from users
-require(`./services/AutoArrange`)(client, fs); 
+
 /**───────────────────────────────────────────────────────────────── @MAIN ──────────*/
 (async () => {
   await client.login(client.config.token)          // Login our client
