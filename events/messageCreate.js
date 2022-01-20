@@ -42,11 +42,7 @@ module.exports = async (client, message) => {
       embed: {
         title: `Commands available:`,
         description: `
-                      **join or invite** - Get the OAuth2 link to add the bot to one of your servers.
-                      **say** (something) - Repeats after you.
-                      These commands also work via DM.
-                      Created by: Lovecraft#4690
-                      Help always welcome: <https://gitlab.com/Lovecraft_>`
+                      `
       }
     }).then(async msg => {
       if (msg.channel.type !== `dm`) msg.delete(50000);

@@ -1,4 +1,5 @@
-module.exports = async (client, message) => {
+module.exports = async (client) => {
+
   let sorting = [];
   if (!client) return;
   client.guilds.fetch(`817485903864791040`)
@@ -23,7 +24,6 @@ module.exports = async (client, message) => {
             }
           });
         })
-        console.log()
     })
     .catch(err => console.error(err));
     

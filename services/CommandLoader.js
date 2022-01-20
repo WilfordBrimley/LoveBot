@@ -1,4 +1,5 @@
 module.exports = async (client, fs) => {
+
   client.commands = new (require(`discord.js`)).Collection();
   client.aliases = new (require(`discord.js`)).Collection();
   // Loads all commands by filename
@@ -13,4 +14,5 @@ module.exports = async (client, fs) => {
     });
     console.log((`Loaded a total of ${files.length} command(s).`));
   })
+  
 };

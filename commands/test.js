@@ -2,6 +2,7 @@ exports.run = (client, message, params) => {
   
   message.channel.sendEmbed('')
     .catch(e => client.emit(`error`, e));
+    
 };
 
 exports.conf = {

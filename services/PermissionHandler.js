@@ -1,4 +1,5 @@
 module.exports = async (client, fs) => {
+  // Not used yet.
   client.elevation = async (message) => { // set our permission levels
     permlvl = 1; // default permlvl of 1
     if (message.author.id === client.config.Dev) permlvl = 5; // if we're the dev, godmode

@@ -6,7 +6,7 @@
  */
 
 /**───────────────────────────────────────────────────────────────── @DECLARE ───────*/
-const {Client, Intents} = require('discord.js'),
+const { Client, Intents } = require('discord.js'),
       client = new Client({                       // This is ugly af
         intents: [
           Intents.FLAGS.GUILDS, 
