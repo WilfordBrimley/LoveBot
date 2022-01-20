@@ -6,8 +6,8 @@ exports.run = (client, message, params) => {
           description: `usage: ${config.prefix}say [words]`
         }
       })
-      .catch(e => client.log.error(e));
-    return
+      .catch(e => client.emit.error(e));
+    return;
   }
   if (message.channel.type != `dm`) message.delete();
   message.channel.send(params.join(` `))

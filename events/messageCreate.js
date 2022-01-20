@@ -2,6 +2,7 @@ module.exports = async (client, message) => {
 
   /**───────────────────────────────────────────────────────────────── @TEST_USER ───────*/
   client.elevation = async (message) => { // set our permission levels
+    console.log(`here`)
     permlvl = 1; // default permlvl of 1
     if (message.author.id === client.config.Dev) permlvl = 5; // if we're the dev, godmode
     return permlvl;
@@ -49,6 +50,6 @@ module.exports = async (client, message) => {
       }
     }).then(async msg => {
       if (msg.channel.type !== `dm`) msg.delete(50000);
-    }).catch(e => client.log.error(e));
+    }).catch(e => client.emit(`error`, e));
   };
 };
